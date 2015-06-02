@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf8">
+    <title>Content Rearranger</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .resort_test {
+            width: 75%;
+            border: 1px solid black;
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+            
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .resort_test div {
+            width: 40%;
+            background-color: lightblue;
+            display: inline-block;
+            margin: 5px;
+            margin: 0 auto !important;
+        }
+        .test {
+            width: 75%;
+            border: 1px solid black;
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .buttonbox {
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .buttonbox button {
+            margin: 0 auto !important;
+            font-size: larger;
+        }
+    </style>
+    <script>
+        function personalize(){
+            //adds the attribute to each tag
+            divs = document.getElementsByClassName('use')
+            for (var div in divs) {
+                div.setAttribute('personalizable', 'true')
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Content Personzalization Test</h2>
+    <p class='buttonbox'>
+        <button onclick='personalize()'>Personalize the things</button>
+    </p>
+    <div class='resort_test' id='resort_test'>
+        <div id='list_original'>
+            <h3>List (original)</h3>
+            <ul>
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Pizza</li>
+                <li>Baseball</li>
+                <li>Coins</li>
+                <li>Zelda</li>
+                <li>Apartments</li>
+                <li>Obama</li>
+            </ul>    
+        </div>
+        <div id='list_sorted'>
+            <h3>List (sorted)</h3>
+            <ul personalizable='asdf'>
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Pizza</li>
+                <li>Baseball</li>
+                <li>Coins</li>
+                <li>Zelda</li>
+                <li>Apartments</li>
+                <li>Obama</li>
+            </ul>
+        </div>
+    </div>
+<!--    <div class='test'>
+        <h3>Which Amazon Product? (1 Chosen)</h3>
+        <div class='container' personalizable='true'>
+            <div></div>
+        </div>
+    </div> -->
+    <div class='test'>
+        <h3>Div Container (1 of 6 Chosen)</h3>
+        <div class='container' personalizable='true'>
+            <div>
+                <h4>China ship capsize: 'Race against time' in Yangtze rescue</h4>
+                <p>
+                    China's transport minister says rescuers are in a "race against time" to find survivors among the hundreds missing after a cruise ship capsized in bad weather on the Yangtze River.
+                    Thousands of rescuers worked through the night around the upturned hull of the Eastern Star in Hubei province.
+                    Five people are confirmed dead and 15 more have been found alive from a ship that was carrying 456 people.
+                    Frustrated relatives have been venting their anger at the lack of information.
+                    The boat went down at about 21:30 local time on Monday evening (13:30 GMT). Most of the passengers are elderly Chinese tourists.
+                    The survivors include the captain and chief engineer, both of whom have been taken into police custody.
+                    The captain said the boat was caught in a cyclone and went down in minutes.
+                </p>
+            </div>
+            <div>
+                <h4>Tributes paid to former Lib Dem leader Charles Kennedy</h4>
+                <p>
+                    Colleagues, friends and political adversaries have paid tribute to former Liberal Democrat leader Charles Kennedy after his sudden death aged 55.
+                    David Cameron said politics had lost a man of "immense ability", while Nick Clegg said his opposition to the Iraq war had been "enormously courageous".
+                    Mr Kennedy, who led his party for over six years, took it to its best election result in 2005 but battled alcoholism.
+                    No cause of death has been given but police said it was not suspicious.
+                    Follow live reaction to Charles Kennedy's death
+                    Mr Kennedy, who lost his seat in last month's election, died at his home in Fort William on Monday. His family said they were devastated to lose a "fine man and loving father".
+                    Under Mr Kennedy's leadership, the Lib Dems won a record 62 seats in 2005 but he resigned eight months after the election after revealing he had been receiving treatment for a long-standing drink problem.
+                </p>
+            </div>
+            <div>
+                <h4>Where you’ll find housing riches — and ruin</h4>
+                <p>
+                    Hot property
+                    So who is sitting pretty, the king or queen of their castle?
+                    If you have a cottage in Ireland, a villa on a man-made island in Dubai, or even an apartment in Estonia’s capital, Tallinn, then you’re probably feeling pretty comfortable right now.
+                    What does that trio of destinations have in common? Their status as the world’s top-performing property markets, based on house price appreciation, according to data from the Global Property Guide analysing house price change (adjusted for inflation) through the fourth quarter of 2014.
+                    All three markets suffered deep declines during the 2008 global economic crisis and the subsequent rebound in property prices in all three has been astonishing.
+                    Other parts of the world haven’t been so lucky. At the bottom of the chart, of the 41 places analysed, is Kiev, Ukraine, with Russia and Beijing, China, rounding out the worst performing markets.
+                    Scroll through the images above for a closer look at those rising and falling housing markets and the reasons behind the trends.
+                </p>
+            </div>
+            <div>
+                <h4>Xoupir: Charles Bombardier’s ‘magic bus’</h4>
+                <p>
+                    Charles Bombardier designs things. Fantastical things, like a robotic hockey referee, a tugboat that creates waves for surfing competitions, and magnet-propelled rollercoaster in which riders hurtle above the track in a metal sphere. He calls that one the “Pinball”, for obvious, frightening reasons. Clearly, then, here’s the man to rethink mass transportation.
+                    It is worth noting that Bombardier is no crank. His last name and early career belong to the Canadian maker of trains, planes and snowmobiles, and he is an influential design thinker and angel investor. Toronto’s Globe & Mail publishes many of his ideas in its “Prototypes” section, and it was that publication that asked him to reinvent the buses of the Toronto Transit Commission.
+                    The result is the Xoupir (pronounced “super”), a slippery electric fantasy that might make riding the bus sexy. Electric motors would power the four drive wheels in its Batmobile-like back end, and the bus would charge wirelessly though induction coils, hidden under the street, which would only power up when the bus passed over them. Roof-mounted, flexible solar panels would power the on-board WiMax station, providing ultra-fast wifi to bus riders and any commuters or residents within a mile radius.
+                    Meanwhile, windows would change opacity as conditions warrant, while the body – skinned with organic light-emitting diodes, or OLEDs – would rotate through different adverts to passersby, in the manner of the memorable Toyota Fun Vii Concept of 2012. It goes without saying that there would be a smartphone app or biometric reader to pay ride fares.
+                </p>
+            </div>
+            <div>
+                <h4>Iraq coalition winning against IS, says US</h4>
+                <p>
+                    Iraq and its allies are pursuing "the winning strategy" to combat Islamic State in Iraq, US Deputy Secretary of State Antony Blinken has said.
+                    Mr Blinken said air strikes and supporting Iraqi forces was the right way to tackle the IS threat.
+                    Ministers from 20 countries debated the issue in Paris - though Russia, Iran and Syria were absent.
+                    Iraq's prime minister said other countries had a duty to support it in its struggle against IS.
+                    Haider al-Abadi earlier called the advance of IS a "failure" of the world.
+                    But at a news conference with Mr Blinken and French Foreign Minister Laurent Fabius following the talks, Mr Abadi said he had received fresh commitments of help from allies.
+                    IS has recently made gains in Iraq despite US-led coalition air strikes.
+                    Last month, IS militants seized Ramadi in Anbar, Iraq's largest province, as well as the strategically important Syrian town of Tadmur and the neighbouring ancient ruins of Palmyra.
+                </p>
+            </div>
+            <div>
+                <h4>Facebook to open AI lab in Paris</h4>
+                <p>
+                    Facebook is to expand its artificial intelligence research, opening its first lab outside the US, in Paris.
+                    The team will work on "ambitious long-term projects", including natural-language processing and speech and image recognition.
+                    Facebook's chief technology officer Mike Schorepfer said the threat of AI had been "overblown" in recent months.
+                    Yann LeCun, who heads up Facebook's AI research, added that "we have nothing to worry about" in the near future.
+                    "We have a long way to go to make machines as intelligent as we'd like them to be, and there are technical hurdles that we don't yet know how to solve," he told the BBC.
+                    "Human-level AI is very far down the line - it will be several decades."
+                    That gave the AI community and industry plenty of time "to talk about the ethics", he added.
+                    Facebook, along with Google, IBM, Microsoft and other technology companies, are increasingly taking an interest in artificial intelligence, which for decades was the preserve of academia.
+                    Mr Schroepfer said the work being done in industry "complemented" that being done in academic research.
+                    All Facebook's AI research was openly published to allow others to benefit, he added.
+                    "Our work in AI research is still relatively early. But we've built a terrific team and have already made some encouraging progress, and we're excited to see where this work takes us and what it will allow us to build for the people we serve," Facebook said in its blog to announce the new lab.
+                    AI is one of three pillars of investment for the company - the others being virtual reality and connectivity.
+                    Initially six research scientists will be based in the Paris lab, growing to 12 by the end of the year.
+                    Paris had been chosen for the first non-US laboratory because of its high concentration of AI researchers, Mr LeCun told the BBC.
+                    Facebook's US lab opened in December 2013. It now employs more than 40 researchers drawn from academia and industry.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

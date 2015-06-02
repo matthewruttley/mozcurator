@@ -1,0 +1,9 @@
+{
+  "name": "mozcurator",
+  "title": "Private client-side personalization",
+  "id": "jid1-w82sj4BcrY0frQ",
+  "description": "Personalizes a webpage based on your history. Creates a content jail to avoid leaks.",
+  "author": "mruttley",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
