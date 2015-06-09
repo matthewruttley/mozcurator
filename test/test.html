@@ -30,24 +30,41 @@
         }
         .test {
             width: 75%;
-            border: 1px solid black;
-            background-color: aliceblue;
             padding: 10px;
             border-radius: 5px;
             margin: 0 auto;
             margin-top: 20px;
+        }
+        .blue {
+            border: 1px solid black;
+            background-color: aliceblue;
         }
         .buttonbox {
             width: 40%;
             text-align: center;
             margin: 0 auto;
         }
+        .product_container {
+            width:40%;
+            border:1px solid black;
+            margin:10px;
+            text-align: left;
+            padding: 10px;
+            overflow: auto;
+        }
+        .product_img {
+            border: 1px solid grey;
+            margin: 10px;
+            float: right;
+            width: 150px;
+            height: auto;
+        }
         .buttonbox button {
             margin: 0 auto !important;
             font-size: larger;
         }
     </style>
-    <script>
+    <!--<script>
         function personalize(){
             //adds the attribute to each tag
             divs = document.getElementsByClassName('use')
@@ -55,7 +72,7 @@
                 div.setAttribute('personalizable', 'true')
             }
         }
-    </script>
+    </script>-->
 </head>
 <body>
     <h2>Content Personzalization Test</h2>
@@ -69,9 +86,23 @@
         </div>
     </div> -->
     <div class='test'>
-        <h3>Div Container (1 of 6 Chosen)</h3>
-        <div class='container' personalizable='true' id='main_container'>
+        <div class='container product_container' id='product_container' personalizable="true">
+            <div id='central_american_coins'>
+                <img src='https://images-na.ssl-images-amazon.com/images/P/0615570186.01.LZZZZZZ.jpg' class='product_img'>
+                <p>The short lived Central American Federation produced some of the finest known silver and gold coins in the history of Latin America. Although, the union between the states failed, the limited number of coins produce have become legendary in the numismatic community. Now for the first time, "The Coins of the Central American Federation" presents a brief, but detail history of the federation and her coins.</p>
+                <img src='http://i.imgur.com/bAgHGa6.png'>
+            </div>
+            <div id='twilight'>
+                <img src='https://images-na.ssl-images-amazon.com/images/P/0316015849.01.LZZZZZZ.jpg' class='product_img'>
+                <p>Isabella Swan's move to Forks, a small, perpetually rainy town in Washington, could have been the most boring move she ever made. But once she meets the mysterious and alluring Edward Cullen, Isabella's life takes a thrilling and terrifying turn. Up until now, Edward has managed to keep his vampire identity a secret in the small community he lives in, but now nobody is safe, especially Isabella, the person Edward holds most dear. The lovers find themselves balanced precariously on the point of a knife-between desire and danger.Deeply romantic and extraordinarily suspenseful, Twilight captures the struggle between defying our instincts and satisfying our desires. This is a love story with bite.</p>
+                <img src='http://i.imgur.com/bAgHGa6.png'>
+            </div>
+        </div>
+    </div>
+    <div class='test blue'>
+        <div class='container' id='main_container' personalizable="true">
             <div id='china_ship_capsize'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>China ship capsize: 'Race against time' in Yangtze rescue</h4>
                 <p>
                     China's transport minister says rescuers are in a "race against time" to find survivors among the hundreds missing after a cruise ship capsized in bad weather on the Yangtze River.
@@ -84,6 +115,7 @@
                 </p>
             </div>
             <div id='charles_kennedy'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>Tributes paid to former Lib Dem leader Charles Kennedy</h4>
                 <p>
                     Colleagues, friends and political adversaries have paid tribute to former Liberal Democrat leader Charles Kennedy after his sudden death aged 55.
@@ -96,6 +128,7 @@
                 </p>
             </div>
             <div id='housing_riches'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>Where you’ll find housing riches — and ruin</h4>
                 <p>
                     Hot property
@@ -108,6 +141,7 @@
                 </p>
             </div>
             <div id='xoupir_charles'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>Xoupir: Charles Bombardier’s ‘magic bus’</h4>
                 <p>
                     Charles Bombardier designs things. Fantastical things, like a robotic hockey referee, a tugboat that creates waves for surfing competitions, and magnet-propelled rollercoaster in which riders hurtle above the track in a metal sphere. He calls that one the “Pinball”, for obvious, frightening reasons. Clearly, then, here’s the man to rethink mass transportation.
@@ -117,6 +151,7 @@
                 </p>
             </div>
             <div id='iraq_coalition'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>Iraq coalition winning against IS, says US</h4>
                 <p>
                     Iraq and its allies are pursuing "the winning strategy" to combat Islamic State in Iraq, US Deputy Secretary of State Antony Blinken has said.
@@ -130,6 +165,7 @@
                 </p>
             </div>
             <div id='facebook_ai_lab'>
+                <img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/desktop/3.5/img/blq-blocks_grey_alpha.png'>
                 <h4>Facebook to open AI lab in Paris</h4>
                 <p>
                     Facebook is to expand its artificial intelligence research, opening its first lab outside the US, in Paris.
