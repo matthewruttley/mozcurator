@@ -28,14 +28,14 @@ self.port.on("show_hide_child_divs", function(which_ones){
 function show_hide_child_divs(which_ones) {
 	//Shows and hides some child divs
 	
-	container = document.getElementById(which_ones[0])
-	child_to_show = document.getElementById(which_ones[1])
+	for (let entry of which_ones) {
+		container = document.getElementById(entry[0])
+		child_to_show = entry[1]
 	
-	for (container of container.children) {
-		if (container.id == child_to_show) {
-			container.style.display = 'normal'	//hide if not most
-		}else{									//relevant
-			container.style.display = 'none'
+		for (let child_div of container.children) {
+			if (child_div.id != child_to_show) {
+				child_div.style.display = 'none' //hide if not most relevant
+			}
 		}
 	}
 	
